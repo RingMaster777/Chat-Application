@@ -1,4 +1,5 @@
 .env
 jsconfig.json
 #dependencies
-node_modules/
+node_modules
+public/uploads

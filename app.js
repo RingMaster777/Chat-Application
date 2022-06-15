@@ -23,7 +23,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("connection successful");
+    console.log("Connection is Successful");
   })
   .catch((err) => console.log(err));
 
@@ -53,5 +53,5 @@ app.use(errorHandler);
 
 // listen
 app.listen(process.env.PORT, () => {
-  console.log(`app listening to port ${process.env.PORT}`);
+  console.log(`App is listening to port ${process.env.PORT}`);
 });
