@@ -4,7 +4,7 @@ const express = require("express");
 const router = express.Router();
 
 // internal imports
-const { getInbox } = require("../controller/inboxController");
+const { getInbox } = require("../controllers/inboxController");
 const decorateHtmlResponse = require("../middleWares/common/decorateHtmlResponse");
 
 // inbox page
