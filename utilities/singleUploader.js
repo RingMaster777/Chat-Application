@@ -44,7 +44,6 @@ function uploader(
       }
     },
   });
-
   return upload;
 }
 

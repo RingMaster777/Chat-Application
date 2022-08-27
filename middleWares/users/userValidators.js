@@ -1,6 +1,7 @@
 const { check, validationResult } = require("express-validator");
 const { path } = require("express/lib/application");
 const createError = require("http-errors");
+const { unlink } = require("fs");
 
 // add user
 
@@ -56,7 +57,7 @@ const addUserValidationHandler = function (req, res, next) {
   if (Object.keys(mappedErrors).length === 0) {
     next();
   } else {
-    // remove uploaded files
+    // there is an error so remove the uploaded files
     if (req.length > 0) {
       const { filename } = req.files[0];
       unlink(
